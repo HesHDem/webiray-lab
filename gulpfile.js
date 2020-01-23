@@ -35,10 +35,10 @@ var path = {
         images: 'app/images/**/*.*',
         fonts: 'app/fonts/**/*.*'
     },
-    script: {
-    	jquery: 'node_modules/jquery/dist/jquery.min.js',
-    	slick: 'node_modules/slick-carousel/slick/slick.min.js'
-    },
+    // script: {
+    // 	jquery: 'node_modules/jquery/dist/jquery.min.js',
+    // 	slick: 'node_modules/slick-carousel/slick/slick.min.js'
+    // },
     clean: 'dist/**'
 };
 
@@ -91,14 +91,14 @@ gulp.task('js:build', function () {
         .pipe(gulp.dest(path.dist.js))
 });
 
-gulp.task('scripts', function() {
-	return gulp.src([
-		path.script.jquery,
-		path.script.slick
-		])
-		.pipe(concat('libs.min.js'))
-		.pipe(gulp.dest(path.dist.js))
-});
+// gulp.task('scripts', function() {
+// 	return gulp.src([
+// 		path.script.jquery,
+// 		path.script.slick
+// 		])
+// 		.pipe(concat('libs.min.js'))
+// 		.pipe(gulp.dest(path.dist.js))
+// });
 
 gulp.task('images', function () {
     return gulp.src(path.app.images)
@@ -139,7 +139,7 @@ gulp.task('dev', gulp.series(
 		'html',
 		'scss',
 		'js',
-		'scripts',
+		// 'scripts',
 		'images',
 		'fonts'
 	)
@@ -150,7 +150,7 @@ gulp.task('build', gulp.series(
 		'html',
 		'scss:build',
 		'js:build',
-		'scripts',
+		// 'scripts',
 		'images:build',
 		'fonts'
 	)
