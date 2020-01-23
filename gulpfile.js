@@ -36,8 +36,8 @@ var path = {
         fonts: 'app/fonts/**/*.*'
     },
     script: {
-    	jquery: 'node_modules/jquery/dist/jquery.min.js'
-    	// slick: 'node_modules/slick-carousel/slick/slick.min.js' 
+    	jquery: 'node_modules/jquery/dist/jquery.min.js',
+    	slick: 'node_modules/slick-carousel/slick/slick.min.js'
     },
     clean: 'dist/**'
 };
