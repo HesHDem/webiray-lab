@@ -74,6 +74,25 @@ body {
 	}
 }
 
+.lang {
+
+	&__icon {
+
+	}
+
+	&__menu {
+
+	}
+
+	&__item {
+
+	}
+
+	&__link {
+
+	}
+}
+
 .logo {
 
 	&__img {
@@ -81,9 +100,182 @@ body {
 	}
 }
 
-/*===== header =====*/
-/*===== header =====*/
-/*===== header =====*/
-/*===== header =====*/
+/*===== main-content =====*/
+
+.about-company {
+
+	&_bg-1 {
+
+	}
+
+	&_bg-2 {
+
+	}
+
+	&_bg-3 {
+
+	}
+
+	&_black {
+
+	}
+
+	&_bg-4 {
+
+	}
+
+	&_bg-5 {
+
+	}
+
+	&_bg-6 {
+
+	}
+
+	&_bg-7 {
+
+	}
+
+	&__btn {
+
+		&_arrow-1 {
+
+		}
+
+		&_arrow-2 {
+
+		}
+
+		&_arrow-3 {
+
+		}
+
+		&_arrow-4 {
+
+		}
+
+		&_arrow-5 {
+
+		}
+
+		&_arrow-6 {
+
+		}
+
+		&_arrow-7 {
+
+		}
+	}
+
+	&__img-block {
+
+	}
+
+	&__img {
+
+		&_arrow {
+
+		}
+
+		&_left {
+
+		}
+
+		&_right {
+
+		}
+	}
+}
+
+.title {
+
+	&_gray {
+
+	}
+
+	&_white {
+
+	}
+}
+
+.sub-title {
+
+	&_gray {
+
+	}
+}
+
+.text {
+
+	&_white {
+
+	}
+}
+
+.btn {
+
+	&_purple {
+
+	}
+
+	&__img {
+
+	}
+}
+
+/*===== footer =====*/
+
+.footer {
+
+	&__lang {
+
+	}
+
+	&__menu {
+
+	}
+
+	&__item {
+
+	}
+
+	&__link {
+
+	}
+
+	&__text {
+
+	}
+
+	&__menu-social {
+
+		&_vertical {
+
+		}
+	}
+
+	&__item-social {
+
+	}
+
+	&__link-social {
+
+	}
+
+	&__link-img {
+
+	}
+}
+
+.copyright {
+
+	&__text {
+
+	}
+
+	&__link {
+
+	}
+}
 
 @import "partials/media.scss";
