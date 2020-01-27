@@ -4,10 +4,16 @@
 @import "partials/fonts.scss";
 
 /* variables colors */
-// $name-color: #color;
+$black: #14141c;
+$gray: #5e5e7b;
+$gray-light: #e5e5e5;
+$silver: #dcdced;
+$white: #eaf5ff;
+$white-2: #f2f2f2;
+$purple: #6f6eff;
 
 /* variables text */
-// $main-font: "name-font";
+$main-font: "HelveticaNeueCyr";
 
 /* variables properties */
 %d-flex-center {
@@ -16,9 +22,13 @@
 	align-items: center;
 }
 
-// body {
-// 	font: 16px/24px $main-font, 'Open Sans', sans-serif;
-// 	font-weight: 500;
-// 	color: $000;
-// 	background: #fff;
-// }
+body {
+	font: 14px/22px $main-font, 'Open Sans', sans-serif;
+	font-weight: 500;
+	color: $black;
+	background: #fff;
+}
+
+
+
+@import "partials/media.scss";
