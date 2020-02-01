@@ -231,6 +231,15 @@ h2 {
 }
 
 .logo {
+	position: relative;
+	display: inline-block;
+
+	&__icon {
+		position: absolute;
+		top: 50%;
+		right: -25px;
+		margin-top: -12px;
+	}
 
 	&__img {
 
@@ -303,11 +312,11 @@ h2 {
 
 .main-screen {
 	display: flex;
-	align-items: center;
 	text-align: right;
 	background: $gray-light url(../images/content/img-1.png) no-repeat bottom left;
 	min-height: 860px;
 	font-weight: 500;
+	padding-top: 160px;
 
 	&__title {
 		@extend %mb90;
@@ -327,7 +336,7 @@ h2 {
 			content: '';
 			position: absolute;
 			bottom: 5px;
-			right: 150%;
+			right: 110%;
 			background: url(../images/content/svg/arrow-1.svg) no-repeat center;
 			min-width: 371px;
 			min-height: 72px;
@@ -627,40 +636,72 @@ h2 {
 /*===== footer =====*/
 
 .footer {
+	background: $black;
+	padding-bottom: 40px;
 
-	&__lang {
+	&__logo-block {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+	}
 
+	&__active-page {
+		color: $purple;
+		margin-left: 48px;
+		@extend %transition-1;
+
+		&:hover {
+			color: $white-2;
+		}
+	}
+
+	&__lang-menu {
+		display: flex;
+		justify-content: flex-end;
 	}
 
 	&__menu {
-
+		
 	}
 
 	&__item {
-
+		margin-bottom: 10px;
 	}
 
 	&__link {
+		color: $white-2;
+		font-weight: 300;
+		@extend %transition-1;
 
+		&:hover {
+			color: $purple;
+		}
 	}
 
 	&__text {
-
+		color: $white-2;
+		text-align: right;
+		margin-right: 13px;
+		@extend %mb35;
 	}
 
 	&__menu-social {
+		display: flex;
+		justify-content: flex-end;
 
 		&_vertical {
-
+			flex-direction: column;
+			align-items: flex-end;
+			margin-top: -40px;
 		}
 	}
 
 	&__item-social {
-
+		margin: 13px;
 	}
 
 	&__link-social {
-
+		
 	}
 
 	&__link-img {
@@ -669,13 +710,14 @@ h2 {
 }
 
 .copyright {
+	padding-top: 105px;
 
 	&__text {
-
+		color: $white-2;
 	}
 
 	&__link {
-
+		color: $purple;
 	}
 }
 
