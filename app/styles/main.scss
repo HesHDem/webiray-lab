@@ -103,6 +103,22 @@ h2 {
 	}
 }
 
+.logo {
+	position: relative;
+	display: inline-block;
+
+	&__icon {
+		position: absolute;
+		top: 50%;
+		right: -25px;
+		margin-top: -12px;
+	}
+
+	&__img {
+
+	}
+}
+
 /*===== header =====*/
 
 .header {
@@ -181,6 +197,7 @@ h2 {
 		display: flex;
 		justify-content: center;
 		width: 100%;
+		padding-right: 80px;
 	}
 
 	&__dropdown {
@@ -194,6 +211,7 @@ h2 {
 		width: 100%;
 		max-height: 114px;
 		padding: 20px 0;
+		padding-right: 80px;
 		background: $white-2;
 		opacity: 0;
 		z-index: 999;
@@ -226,22 +244,6 @@ h2 {
 
 	&__img-dropdown {
 		margin-bottom: 8px;
-	}
-}
-
-.logo {
-	position: relative;
-	display: inline-block;
-
-	&__icon {
-		position: absolute;
-		top: 50%;
-		right: -25px;
-		margin-top: -12px;
-	}
-
-	&__img {
-
 	}
 }
 
@@ -718,6 +720,10 @@ h2 {
 	&__link {
 		color: $purple;
 	}
+}
+
+.btn-lift-up {
+	margin-right: 13px;
 }
 
 @import "partials/media.scss";
