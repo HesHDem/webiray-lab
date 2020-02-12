@@ -144,7 +144,7 @@ gulp.task('dev', gulp.series(
 	)
 ));
 
-gulp.task('build', gulp.series(
+gulp.task('dist', gulp.series(
 	gulp.parallel(
 		'html',
 		'scss:build',
@@ -159,8 +159,8 @@ gulp.task('clean', function() {
   return del.sync([path.clean]);
 });
 
-gulp.task('gulp-build', gulp.series(
-	'build',
+gulp.task('build', gulp.series(
+	'dist',
 	gulp.parallel('watch', 'serve')
 ));
 
